@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Services page of Your Website" />
+  <link rel="icon" href="Assets/egg">
+  <link rel="stylesheet" href="Assets/nav.css">
+  <title>Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, footer { background:rgb(200, 214, 71); color: #000000; padding: 16px; }
+    nav ul { display:flex; gap:16px; list-style:none; padding:0; margin:8px 0 0; }
+    nav a { color:#000000; text-decoration:none; }
+    nav a[aria-current="page"] { text-decoration: underline; font-weight: 700; }
+    main { padding: 24px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { border:1px solid #eee; border-radius:8px; padding:16px; background:#fff; }
+    .card a { display:inline-block; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Egg Timer</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>Our Services</h2>
+      <p>What we provide and how it helps users.</p>
+    </header>
+
+    <section aria-label="Service list" class="grid">
+      <article class="card">
+        <h3>Service A</h3>
+        <p>High-accuracy countdowns 
+        calibrated for the perfect soft, medium, or hard-boiled egg every single time..</p>
+        <a href="contact.html">Try it now →</a>
+      </article>
+      <article class="card">
+        <h3>Service B</h3>
+        <p>Don't guess the minutes. 
+        Choose your desired yolk consistency through our visual guide and start the clock instantly.</p>
+        <a href="contact.html">Set a Time! →</a>
+      </article>
+      <article class="card">
+        <h3>Service C</h3>
+        <p>Clear, non-intrusive sound 
+        notifications that let you know the second your eggs are ready, even if you’re in another tab.</p>
+        <a href="contact.html">Try it! →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

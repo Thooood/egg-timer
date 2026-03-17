@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home page of Your Website" />
+  <link rel="icon" href="Assets/egg">
+  <link rel="stylesheet" href="Assets/nav.css">
+  
+  <title>Egg Timer</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <header>
+
+    <h1>Your Website</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Egg Timer Website</h2>
+      <p> Boil eggs, not your focus—the distraction-free timer for the perfect yolk.</p>
+      <p><a href="services.html">Explore our services →</a></p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Feature One</h3>
+          <p>You don't have to download an app just to make your egg perfect.</p>
+          <img src="Assets/4.png" alt="no phone" style="height: 200px; width: auto;">
+        </article>
+        <article class="card">
+          <h3>Feature Two</h3>
+          <p>You can choose more types of egg!!!</p>
+          <img src="Assets/2.png" alt="eggs" style="height: 200px; width: auto;">
+        </article>
+        <article class="card">
+          <h3>Feature Three</h3>
+          <p>This website gives you time to do other things while waiting for your egg to cook.</p>
+          <img src="Assets/3.png" alt="egg" style="height: 200px; width: auto;">
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+``
